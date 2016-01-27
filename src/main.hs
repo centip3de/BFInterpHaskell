@@ -81,7 +81,7 @@ execute bf = if isEnd bf then
                     bf' <- step bf
                     execute bf' { pos = (pos bf') + 1 }
 
--- Main funciton.
+-- Main function.
 main = do
     args <- getArgs
     let fileName = head args
